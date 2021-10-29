@@ -3,8 +3,6 @@
 
 # pip install luno-python
 
-# In[14]:
-
 
 from luno_python.client import Client
 import time
@@ -110,23 +108,6 @@ print("Your post-trading XBT balance is: BTC",post_xbt_bal)
 
 profit=(int(float(c.get_ticker('XBTZAR')['bid']))*float(post_xbt_bal)+int(float(post_zar_bal)))-net_value
 
-print("Your prifit is: R", profit)
-
-
-# In[13]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
+print("Your profit is: R", profit)
 
 
