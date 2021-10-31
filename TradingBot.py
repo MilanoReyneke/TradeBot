@@ -26,8 +26,8 @@ print("Your total worth is: R", net_value)
 
 
 period = int(input("Enter trading period - time between trades being considered in seconds:"))
-train_time = 72000/period - 14
-trade_time = 14400/period
+train_time = int(72000/period - 14)
+trade_time = int(14400/period)
 
 #Training of neural net with 20 hours of currency price data
 Net = NeuralNet()
